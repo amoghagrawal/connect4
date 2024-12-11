@@ -1,0 +1,26 @@
+<html><head><base href="." />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="mainMenu">
+    <div class="menu-frame">
+        <h1 class="menu-title">Connect<br>Four</h1>
+        <button class="start-btn" onclick="startGame()">Start Game</button>
+    </div>
+</div>
+
+<div id="gameContent">
+    <div class="status" id="status">Your turn!</div>
+    <div class="board" id="board"></div>
+    <button class="reset-btn" onclick="resetGame()">Reset Game</button>
+</div>
+
+<div id="gameOverScreen" style="display: none;">
+    <div class="menu-frame">
+        <h1 class="game-over-title">Game<br>Over</h1>
+        <div class="winner-text" id="winnerText"></div>
+        <button class="play-again-btn" onclick="resetGame()">Play Again</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body></html>
